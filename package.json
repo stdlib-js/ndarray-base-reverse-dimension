@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-reverse-dimension",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return a view of an input ndarray in which the order of elements along a specified dimension is reversed.",
   "license": "Apache-2.0",
   "author": {
