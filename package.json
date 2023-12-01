@@ -43,17 +43,17 @@
     "@stdlib/slice-base-args2multislice": "^0.1.0",
     "@stdlib/slice-ctor": "^0.1.0",
     "@stdlib/string-format": "^0.1.1",
-    "@stdlib/types": "^0.1.0"
+    "@stdlib/types": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/array-base-zero-to": "^0.1.0",
     "@stdlib/array-typed": "^0.1.0",
     "@stdlib/assert-is-ndarray-like": "^0.1.0",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/ndarray-array": "^0.1.0",
     "@stdlib/ndarray-base-assert-is-read-only": "^0.1.1",
     "@stdlib/ndarray-base-ctor": "^0.1.0",
-    "@stdlib/ndarray-base-empty": "^0.1.0",
+    "@stdlib/ndarray-base-empty": "^0.1.1",
     "@stdlib/ndarray-ctor": "^0.1.0",
     "@stdlib/ndarray-empty": "^0.1.0",
     "@stdlib/ndarray-to-array": "^0.1.0",
