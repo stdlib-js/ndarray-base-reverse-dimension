@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-base-filled": "^0.2.2",
+    "@stdlib/array-base-nulls": "github:stdlib-js/array-base-nulls#main",
     "@stdlib/ndarray-base-ndims": "^0.2.2",
     "@stdlib/ndarray-base-slice": "^0.2.2",
     "@stdlib/slice-base-args2multislice": "^0.2.2",
