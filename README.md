@@ -78,8 +78,8 @@ var reverseDimension = require( '@stdlib/ndarray-base-reverse-dimension' );
 Returns a view of an input ndarray in which the order of elements along a specified dimension is reversed.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray-shape' );
 var ndarray = require( '@stdlib/ndarray-ctor' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var shape = [ 3, 2 ];
@@ -87,22 +87,16 @@ var strides = [ 2, 1 ];
 var offset = 0;
 
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
-// returns <ndarray>
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
-
-var arr = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
 var y = reverseDimension( x, 0, false );
-// returns <ndarray>
+// returns <ndarray>[ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 3, 2 ]
-
-arr = ndarray2array( y );
-// returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 ```
 
 The function accepts the following arguments:
@@ -230,8 +224,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-reverse-dimension.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-reverse-dimension
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-reverse-dimension/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/ndarray-base-reverse-dimension/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/ndarray-base-reverse-dimension/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/ndarray-base-reverse-dimension/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-reverse-dimension/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-reverse-dimension?branch=main
